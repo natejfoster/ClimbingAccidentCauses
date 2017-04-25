@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accidents in North American Climbing</title>
+
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v4.js"></script>
+
+    <!-- Custom files -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- script file -->
+    <script src="js/main.js"></script>
+</head>
+
+<body class="container">
+    <h1>Accidents in North American Climbing</h1>
+    <hr>
+    <p>
+      This is a visual look at the causes of accidents in North American climbing, and how each
+      cause contributes to the total number of accidents. Causes in blue are "Immediate" causes,
+      and causes in orange are "Contributing" causes. Please note that while both data for the
+      time period of 1959 to 2014 and 2015 alone can be viewed, comparisons between the two
+      should not be made as the totals are significantly smaller for 2015. This is also the case
+      for USA vs Canada. The purpose is to see how the causes of accidents compare to each other.
+    </p>
+    <p>
+      The data used is from the 2016 edition of <em>Accidents in North American Climbing</em>
+      published by the American Alpine Club.
+    </p>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary" id="USA">
+				  <input value="USA" type="radio" name="options" class="option1" autocomplete="off">USA
+			  </label>
+        <label class="btn btn-primary">
+				  <input value="CAN" type="radio" name="options" class="option1" autocomplete="off" >Canada
+			  </label>
+    </div>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary" id="1959-2014">
+        <input value="1959-2014" type="radio" name="options" class="option2" autocomplete="off">1959-2014
+      </label>
+      <label class="btn btn-primary">
+        <input value="2015" type="radio" name="options" class="option2" autocomplete="off">2015
+      </label>
+    </div>
+    <div id="vis"></div>
+    <div id="explanation">
+      <h3>Explanation</h3>
+      <hr>
+      <p>
+        On your webpage, you must provide a detailed defense of your choice of visual encodings and control
+        features. For your visual layout, describe why it is an optimal choice for expressing your data
+        effectively (~ 1 paragraph).
+
+
+      </p>
+      <p>
+        Then, for each controlling element, detail how it enables your user to
+        ask different questions (~1 paragraph). You should include specific examples of insights you discovered
+        through the use of these tools.
+        <br />
+        The conrolling elements of this visualization are pretty simple. It allows the viewer to
+        specify if they wish to view the data for the United States or for Canada. For each of
+        these options, the viewer can specify the time period they would like to see: a range of 1959 to 2014, or
+        just the data for 2015. The country control allowed 
+      </p>
+    </div>
+</body>
+
+</html>

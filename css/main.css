@@ -1,0 +1,59 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
+.axis line, .axis path {
+  fill: none;
+  stroke: #000;
+}
+
+.title {
+	text-anchor:middle;
+}
+
+hr {
+  border-color: #002642;
+  border-width: 2px;
+}
+.node {
+  font: 9px sans-serif;
+  line-height: 10px;
+  word-wrap: break-word;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+  color:white;
+}
+
+#vis {
+  position:relative;
+  padding-bottom:100px;
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+.btn-group {
+  margin-bottom:20px;
+  margin-left: 10px;
+}
+
+.btn-primary {
+  background-color: #840032;
+  border-color: #840032;
+}
+
+.btn-primary:hover {
+  background-color: #C52233;
+  border-color: #9b1a27;
+}
+
+.btn-primary.active {
+  background-color: #C52233 !important;
+  border-color: #9b1a27 !important;
+}
+
+body {
+  background-color: #D0CCD0;
+}
+
+#explanation {
+  margin-bottom: 42px;
+}
